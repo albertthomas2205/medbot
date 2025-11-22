@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Django (ASGI - Uvicorn)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "asgi_uk_medical_bot.asgi:application",
+                "--host", "0.0.0.0",
+                "--port", "8001",
+                "--reload"
+            ],
+            "django": true,
+            "justMyCode": false
+        },
+        {
+            "name": "Django (runserver)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver",
+                "0.0.0.0:8001"
+            ],
+            "django": true,
+            "justMyCode": false
+        }
+    ]
+}

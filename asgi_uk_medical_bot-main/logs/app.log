@@ -1,0 +1,465 @@
+[2025-11-18 14:29:58,336] WARNING django.request - Not Found: /
+[2025-11-18 14:30:02,090] WARNING django.request - Not Found: /favicon.ico
+[2025-11-18 14:30:24,414] WARNING django.request - Not Found: /api/madicalbot/main
+[2025-11-18 14:30:38,477] WARNING django.request - Not Found: /api/madicalbot/bed/data/
+[2025-11-18 14:31:15,272] WARNING django.request - Not Found: /api/medicalbot/bed/data/
+[2025-11-18 14:31:20,819] WARNING django.request - Not Found: /api/medicalbot/bed/data/
+[2025-11-18 14:31:50,341] WARNING django.request - Unauthorized: /api/medicalbot/bed/data/bed/all/
+[2025-11-20 10:07:55,006] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:12:41,197] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:15:48,182] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\settings.py changed, reloading.
+[2025-11-20 10:15:50,559] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:16:01,604] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\settings.py changed, reloading.
+[2025-11-20 10:16:03,436] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:21:00,279] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\settings.py changed, reloading.
+[2025-11-20 10:21:03,526] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:21:53,833] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\settings.py changed, reloading.
+[2025-11-20 10:21:56,710] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:22:09,634] WARNING django.request - Not Found: /
+[2025-11-20 10:22:09,635] WARNING django.server - "GET / HTTP/1.1" 404 4198
+[2025-11-20 10:22:10,096] WARNING django.request - Not Found: /favicon.ico
+[2025-11-20 10:22:10,097] WARNING django.server - "GET /favicon.ico HTTP/1.1" 404 4249
+[2025-11-20 10:22:31,458] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:34:57,677] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:39:21,970] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\urls.py changed, reloading.
+[2025-11-20 10:39:24,363] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:39:43,574] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:42:12,984] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\urls.py changed, reloading.
+[2025-11-20 10:42:14,919] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:42:17,779] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\urls.py changed, reloading.
+[2025-11-20 10:42:19,095] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:42:23,045] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\urls.py changed, reloading.
+[2025-11-20 10:42:24,429] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:42:37,056] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\urls.py changed, reloading.
+[2025-11-20 10:42:38,433] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:55:03,538] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 10:55:26,797] WARNING django.request - Not Found: /
+[2025-11-20 10:55:26,799] WARNING django.server - "GET / HTTP/1.1" 404 3703
+[2025-11-20 10:55:27,118] WARNING django.request - Not Found: /favicon.ico
+[2025-11-20 10:55:27,119] WARNING django.server - "GET /favicon.ico HTTP/1.1" 404 3754
+[2025-11-20 11:17:47,544] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 11:17:50,435] WARNING django.request - Not Found: /api/medicalbot/
+[2025-11-20 11:17:50,436] WARNING django.server - "GET /api/medicalbot/ HTTP/1.1" 404 3766
+[2025-11-20 11:17:58,328] WARNING django.request - Not Found: /api/medicalbot/main/
+[2025-11-20 11:17:58,329] WARNING django.server - "GET /api/medicalbot/main/ HTTP/1.1" 404 7859
+[2025-11-20 11:18:06,454] INFO django.server - "GET /api/medicalbot/main/login HTTP/1.1" 301 0
+[2025-11-20 11:18:06,820] WARNING django.request - Method Not Allowed: /api/medicalbot/main/login/
+[2025-11-20 11:18:06,820] WARNING django.server - "GET /api/medicalbot/main/login/ HTTP/1.1" 405 5629
+[2025-11-20 11:18:07,194] INFO django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[2025-11-20 11:18:07,222] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+[2025-11-20 11:18:07,226] INFO django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+[2025-11-20 11:18:07,229] INFO django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[2025-11-20 11:18:07,230] INFO django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+[2025-11-20 11:18:07,270] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[2025-11-20 11:18:07,279] INFO django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[2025-11-20 11:18:07,302] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[2025-11-20 11:18:07,302] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+[2025-11-20 11:18:07,347] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[2025-11-20 11:18:07,356] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[2025-11-20 11:18:07,395] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+[2025-11-20 11:18:18,589] WARNING django.request - Not Found: /api/medicalbot/main/create
+[2025-11-20 11:18:18,590] WARNING django.server - "GET /api/medicalbot/main/create HTTP/1.1" 404 7877
+[2025-11-20 11:18:32,598] INFO django.server - "GET /api/medicalbot/main/create-admin HTTP/1.1" 301 0
+[2025-11-20 11:18:32,605] WARNING django.request - Unauthorized: /api/medicalbot/main/create-admin/
+[2025-11-20 11:18:32,606] WARNING django.server - "GET /api/medicalbot/main/create-admin/ HTTP/1.1" 401 3849
+[2025-11-20 11:18:53,451] WARNING django.request - Method Not Allowed: /api/medicalbot/main/login/
+[2025-11-20 11:18:53,452] WARNING django.server - "GET /api/medicalbot/main/login/ HTTP/1.1" 405 5629
+[2025-11-20 11:19:23,722] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-20 11:19:23,722] WARNING django.server - "POST /api/medicalbot/main/login/ HTTP/1.1" 400 5664
+[2025-11-20 11:20:38,080] INFO django.server - "POST /api/medicalbot/main/login/ HTTP/1.1" 200 6452
+[2025-11-20 12:03:39,066] WARNING django.request - Not Found: /
+[2025-11-20 12:03:39,083] WARNING django.server - "GET / HTTP/1.1" 404 3703
+[2025-11-20 12:04:05,687] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-20 12:04:05,688] ERROR django.server - "GET /api/medicalbot/robot_management/all-robot-telemetry/ HTTP/1.1" 500 5645
+[2025-11-20 12:04:05,728] INFO django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-11-20 12:04:05,729] INFO django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-11-20 12:04:05,733] INFO django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-11-20 12:04:05,733] INFO django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-11-20 12:04:05,739] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-11-20 12:04:05,739] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-11-20 12:04:05,739] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-11-20 12:04:05,740] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-11-20 12:04:05,741] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-11-20 12:04:05,741] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-11-20 12:04:05,744] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-11-20 12:04:05,747] INFO django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-11-20 12:11:03,684] WARNING django.request - Not Found: /api/medicalbot/robot_management/
+[2025-11-20 12:11:03,691] WARNING django.server - "GET /api/medicalbot/robot_management/ HTTP/1.1" 404 14739
+[2025-11-20 12:11:26,565] INFO django.server - "GET /api/medicalbot/robot_management/create-robot-telemetry HTTP/1.1" 301 0
+[2025-11-20 12:11:26,641] WARNING django.request - Method Not Allowed: /api/medicalbot/robot_management/create-robot-telemetry/
+[2025-11-20 12:11:26,643] WARNING django.server - "GET /api/medicalbot/robot_management/create-robot-telemetry/ HTTP/1.1" 405 5855
+[2025-11-20 12:11:34,504] INFO django.server - "POST /api/medicalbot/robot_management/create-robot-telemetry/ HTTP/1.1" 200 6976
+[2025-11-20 12:11:52,219] WARNING django.request - Not Found: /api/medicalbot/robot_management/
+[2025-11-20 12:11:52,221] WARNING django.server - "GET /api/medicalbot/robot_management/ HTTP/1.1" 404 14739
+[2025-11-20 12:12:21,430] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telementry
+[2025-11-20 12:12:21,431] WARNING django.server - "GET /api/medicalbot/robot_management/all-robot-telementry HTTP/1.1" 404 14799
+[2025-11-20 12:12:25,165] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telementry
+[2025-11-20 12:12:25,166] WARNING django.server - "GET /api/medicalbot/robot_management/all-robot-telementry HTTP/1.1" 404 14799
+[2025-11-20 12:12:44,110] INFO django.server - "GET /api/medicalbot/robot_management/all-robot-telemetry HTTP/1.1" 301 0
+[2025-11-20 12:12:44,201] INFO django.server - "GET /api/medicalbot/robot_management/all-robot-telemetry/ HTTP/1.1" 200 6667
+[2025-11-20 12:18:55,185] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\robot_management\views.py changed, reloading.
+[2025-11-20 12:18:59,820] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 12:34:43,309] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\robot_management\views.py changed, reloading.
+[2025-11-20 12:34:47,287] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 12:35:04,088] INFO django.server - "GET /api/medicalbot/robot_management/all-robot-telemetry/ HTTP/1.1" 200 6779
+[2025-11-20 12:35:04,150] INFO django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-11-20 12:35:04,152] INFO django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-11-20 12:35:04,154] INFO django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-11-20 12:35:04,155] INFO django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-11-20 12:35:04,156] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-11-20 12:35:04,156] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-11-20 12:35:04,157] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-11-20 12:35:04,159] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-11-20 12:35:04,159] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-11-20 12:35:04,161] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-11-20 12:35:04,162] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-11-20 12:35:04,166] INFO django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-11-20 12:42:23,430] INFO django.server - "GET /api/medicalbot/robot_management/all-robot-telemetry/ HTTP/1.1" 200 646
+[2025-11-20 12:58:25,835] INFO django.server - "GET /api/medicalbot/robot_management/all-robot-telemetry/ HTTP/1.1" 200 6779
+[2025-11-20 12:58:25,932] INFO django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-11-20 12:58:25,938] INFO django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-11-20 12:58:25,939] INFO django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-11-20 12:58:25,945] INFO django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-11-20 12:58:25,954] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-11-20 12:58:25,956] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-11-20 12:58:25,956] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-11-20 12:58:25,956] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-11-20 12:58:25,956] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-11-20 12:58:25,960] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-11-20 12:58:25,965] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-11-20 12:58:26,012] INFO django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-11-20 14:58:36,820] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 14:59:16,025] INFO django.server - "GET /swagger/ HTTP/1.1" 200 2209
+[2025-11-20 14:59:16,346] INFO django.server - "GET /swagger/?format=openapi HTTP/1.1" 200 24101
+[2025-11-20 14:59:16,346] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+[2025-11-20 15:01:16,816] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\urls.py changed, reloading.
+[2025-11-20 15:01:19,398] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 15:01:22,704] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\urls.py changed, reloading.
+[2025-11-20 15:01:24,346] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-20 15:03:24,361] INFO django.server - "GET /swagger/ HTTP/1.1" 200 2215
+[2025-11-20 15:03:24,432] INFO django.server - "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+[2025-11-20 15:03:24,435] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+[2025-11-20 15:03:24,439] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+[2025-11-20 15:03:24,440] INFO django.server - "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+[2025-11-20 15:03:24,441] INFO django.server - "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+[2025-11-20 15:03:24,441] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+[2025-11-20 15:03:24,441] INFO django.server - "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+[2025-11-20 15:03:25,045] INFO django.server - "GET /swagger/?format=openapi HTTP/1.1" 200 24107
+[2025-11-20 15:03:25,046] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+[2025-11-20 15:03:45,727] INFO django.server - "GET /swagger/ HTTP/1.1" 200 2215
+[2025-11-20 15:03:45,908] INFO django.server - "GET /swagger/?format=openapi HTTP/1.1" 200 24107
+[2025-11-20 15:08:24,679] INFO django.server - "GET /swagger/?format=openapi HTTP/1.1" 200 24107
+[2025-11-20 15:22:46,577] WARNING django.request - Unauthorized: /api/medicalbot/bed/data/bed/all/
+[2025-11-20 15:22:46,586] WARNING django.server - "GET /api/medicalbot/bed/data/bed/all/ HTTP/1.1" 401 58
+[2025-11-20 15:23:16,551] WARNING django.request - Unauthorized: /api/medicalbot/bed/data/bed/all/
+[2025-11-20 15:23:16,552] WARNING django.server - "GET /api/medicalbot/bed/data/bed/all/ HTTP/1.1" 401 58
+[2025-11-20 15:23:20,621] WARNING django.request - Unauthorized: /api/medicalbot/bed/data/bed/all/
+[2025-11-20 15:23:20,622] WARNING django.server - "GET /api/medicalbot/bed/data/bed/all/ HTTP/1.1" 401 58
+[2025-11-20 15:23:38,564] WARNING django.request - Unauthorized: /api/medicalbot/bed/data/bed/all/
+[2025-11-20 15:23:38,564] WARNING django.server - "GET /api/medicalbot/bed/data/bed/all/ HTTP/1.1" 401 58
+[2025-11-20 15:24:54,560] WARNING django.request - Unauthorized: /api/medicalbot/bed/data/bed/all/
+[2025-11-20 15:24:54,561] WARNING django.server - "GET /api/medicalbot/bed/data/bed/all/ HTTP/1.1" 401 58
+[2025-11-20 15:25:49,657] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-20 15:25:49,659] WARNING django.server - "POST /api/medicalbot/main/login/ HTTP/1.1" 400 54
+[2025-11-20 15:26:13,021] INFO django.server - "GET /swagger/ HTTP/1.1" 200 2215
+[2025-11-20 15:26:13,149] INFO django.server - "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+[2025-11-20 15:26:13,150] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+[2025-11-20 15:26:13,153] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+[2025-11-20 15:26:13,156] INFO django.server - "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+[2025-11-20 15:26:13,156] INFO django.server - "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+[2025-11-20 15:26:13,156] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+[2025-11-20 15:26:13,158] INFO django.server - "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+[2025-11-20 15:26:13,672] INFO django.server - "GET /swagger/?format=openapi HTTP/1.1" 200 24107
+[2025-11-20 15:26:13,673] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+[2025-11-20 15:36:11,613] INFO django.server - "GET /swagger/ HTTP/1.1" 200 2215
+[2025-11-20 15:36:11,748] INFO django.server - "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+[2025-11-20 15:36:11,749] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+[2025-11-20 15:36:11,751] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+[2025-11-20 15:36:11,751] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+[2025-11-20 15:36:11,753] INFO django.server - "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+[2025-11-20 15:36:11,757] INFO django.server - "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+[2025-11-20 15:36:11,757] INFO django.server - "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+[2025-11-20 15:36:12,367] INFO django.server - "GET /swagger/?format=openapi HTTP/1.1" 200 24107
+[2025-11-20 15:36:12,371] INFO django.server - "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+[2025-11-20 15:41:47,341] INFO django.utils.autoreload - C:\Users\alber\Desktop\asgi_uk_medical_bot-main\asgi_uk_medical_bot-main\asgi_uk_medical_bot\urls.py changed, reloading.
+[2025-11-20 15:41:50,571] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-21 09:52:21,049] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-21 10:50:31,116] WARNING django.request - Not Found: /
+[2025-11-21 10:50:31,756] WARNING django.request - Not Found: /favicon.ico
+[2025-11-21 12:35:21,669] WARNING django.request - Not Found: /
+[2025-11-21 16:10:50,486] WARNING django.request - Not Found: /
+[2025-11-21 16:10:50,841] WARNING django.request - Not Found: /favicon.ico
+[2025-11-21 16:11:01,780] WARNING django.request - Not Found: /static/drf-yasg/style.css
+[2025-11-21 16:11:01,780] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui.css
+[2025-11-21 16:11:01,788] WARNING django.request - Not Found: /static/drf-yasg/immutable.min.js
+[2025-11-21 16:11:01,788] WARNING django.request - Not Found: /static/drf-yasg/insQ.min.js
+[2025-11-21 16:11:01,789] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+[2025-11-21 16:11:01,793] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+[2025-11-21 16:11:01,819] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-init.js
+[2025-11-21 16:11:01,992] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/favicon-32x32.png
+[2025-11-21 16:11:06,694] WARNING django.request - Not Found: /static/drf-yasg/style.css
+[2025-11-21 16:11:06,708] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+[2025-11-21 16:11:06,709] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui.css
+[2025-11-21 16:11:06,712] WARNING django.request - Not Found: /static/drf-yasg/immutable.min.js
+[2025-11-21 16:11:06,715] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+[2025-11-21 16:11:06,718] WARNING django.request - Not Found: /static/drf-yasg/insQ.min.js
+[2025-11-21 16:11:06,874] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-init.js
+[2025-11-21 16:11:08,913] WARNING django.request - Not Found: /accounts/login/
+[2025-11-21 16:11:23,002] WARNING django.request - Not Found: /static/drf-yasg/style.css
+[2025-11-21 16:11:23,029] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui.css
+[2025-11-21 16:11:23,033] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+[2025-11-21 16:11:23,033] WARNING django.request - Not Found: /static/drf-yasg/immutable.min.js
+[2025-11-21 16:11:23,037] WARNING django.request - Not Found: /static/drf-yasg/insQ.min.js
+[2025-11-21 16:11:23,039] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+[2025-11-21 16:11:23,066] WARNING django.request - Not Found: /static/drf-yasg/swagger-ui-init.js
+[2025-11-21 16:11:28,336] WARNING django.request - Not Found: /accounts/login/
+[2025-11-21 16:11:38,993] WARNING django.request - Not Found: /static/drf-yasg/style.css
+[2025-11-21 16:11:39,011] WARNING django.request - Not Found: /static/drf-yasg/redoc/redoc.min.js
+[2025-11-21 16:11:39,012] WARNING django.request - Not Found: /static/drf-yasg/redoc-init.js
+[2025-11-21 16:11:39,012] WARNING django.request - Not Found: /static/drf-yasg/insQ.min.js
+[2025-11-21 16:11:39,218] WARNING django.request - Not Found: /static/drf-yasg/redoc/redoc-logo.png
+[2025-11-21 16:11:43,661] WARNING django.request - Not Found: /static/drf-yasg/style.css
+[2025-11-21 16:11:43,876] WARNING django.request - Not Found: /static/drf-yasg/insQ.min.js
+[2025-11-21 16:11:43,889] WARNING django.request - Not Found: /static/drf-yasg/redoc-init.js
+[2025-11-21 16:11:43,906] WARNING django.request - Not Found: /static/drf-yasg/redoc/redoc.min.js
+[2025-11-21 16:34:30,568] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/getup/robot/volume/
+[2025-11-21 16:34:30,622] ERROR django.request - Internal Server Error: /api/medicalbot/video_management/view-active-video/
+[2025-11-21 16:34:30,628] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/getup/robot/volume/
+[2025-11-21 16:34:30,659] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:30,799] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:31,485] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:32,824] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:33,407] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:34,436] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:35,456] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:36,516] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:37,450] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:38,499] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:39,454] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:41,113] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:42,607] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:42,667] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:43,788] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:44,766] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:45,466] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:46,394] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:47,431] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:48,442] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:49,440] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:50,453] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:51,424] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:52,446] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:53,440] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:54,437] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:55,462] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:56,430] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:57,421] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:58,616] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:34:59,471] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:00,613] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:01,505] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:02,483] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:03,473] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:04,432] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:05,434] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:06,464] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:07,375] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:08,437] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:09,446] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:10,461] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:11,443] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:12,401] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:13,466] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:14,444] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:15,399] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:15,705] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/getup/robot/volume/
+[2025-11-21 16:35:15,750] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/getup/robot/volume/
+[2025-11-21 16:35:15,787] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/getup/robot/volume/
+[2025-11-21 16:35:15,796] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/getup/robot/volume/
+[2025-11-21 16:35:15,826] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/getup/robot/volume/
+[2025-11-21 16:35:15,834] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/getup/robot/volume/
+[2025-11-21 16:35:15,841] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/getup/robot/volume/
+[2025-11-21 16:35:16,553] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:17,959] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:18,464] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:19,477] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:20,441] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:21,605] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:22,492] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:23,511] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:24,427] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:25,621] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:26,532] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:27,470] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:28,549] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:29,595] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:30,439] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:31,527] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:32,484] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:33,465] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:34,632] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:35,501] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:36,495] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:37,439] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:38,439] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:39,542] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:40,508] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:41,537] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:42,443] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:43,424] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:44,545] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:45,470] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:45,602] WARNING django.request - Not Found: /accounts/login/
+[2025-11-21 16:35:46,428] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:47,522] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:48,598] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:49,445] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:50,544] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:51,471] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:52,469] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:53,635] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:54,555] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:55,591] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:56,458] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:57,509] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:58,523] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:35:59,496] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:00,450] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:01,478] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:02,503] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:03,572] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:04,488] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:04,641] WARNING django.request - Unauthorized: /api/medicalbot/main/create-admin/
+[2025-11-21 16:36:05,509] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:06,489] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:07,604] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:07,905] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/fetch-latest-slot/
+[2025-11-21 16:36:08,617] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:09,476] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:10,525] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:11,628] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:11,779] WARNING django.request - Not Found: /api/medicalbot/
+[2025-11-21 16:36:12,486] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:13,468] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:14,420] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:15,513] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:16,681] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:17,988] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:18,465] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:19,444] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:20,445] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:21,481] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:22,456] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:23,535] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:24,507] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:25,512] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:26,567] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:27,700] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:28,570] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:29,452] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:30,486] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:31,701] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:32,423] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:33,447] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:34,586] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:35,646] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:36,556] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:36,609] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:37,490] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:38,663] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:39,463] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:40,571] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:42,112] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:42,506] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:43,926] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:44,571] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:45,734] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:46,645] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:47,464] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:48,605] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:49,818] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:51,235] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:51,530] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:52,543] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:54,032] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:54,708] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:55,769] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:56,476] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:57,603] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:58,466] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:36:59,443] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:00,905] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:01,986] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:02,451] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:03,441] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:04,505] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:05,440] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:06,478] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:07,458] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:08,557] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:09,511] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:10,440] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:11,464] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:12,490] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:13,461] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:15,861] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:16,083] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:16,690] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:37:17,582] ERROR django.request - Internal Server Error: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:35,409] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:35,455] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:36,584] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:37,595] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:38,466] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:39,449] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:40,473] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:41,395] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:42,562] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:43,686] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:44,743] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:45,443] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:46,718] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:47,636] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:48,425] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:49,396] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:50,440] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:51,558] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:52,783] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:53,490] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:54,420] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:55,562] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:56,683] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:57,514] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:58,931] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:40:59,501] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:00,551] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:00,964] WARNING django.request - Not Found: /api/medicalbot/robot_management/
+[2025-11-21 16:41:01,421] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:02,542] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:03,835] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:04,409] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:05,873] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:06,708] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:07,577] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:08,554] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:09,394] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:10,798] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:11,624] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:12,694] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:13,859] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:15,272] WARNING django.request - Method Not Allowed: /api/medicalbot/robot_management/create-robot-telemetry/
+[2025-11-21 16:41:15,581] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:15,582] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:17,125] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:17,964] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:19,615] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:20,186] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:41:20,794] WARNING django.request - Not Found: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-21 16:47:50,806] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-21 16:48:08,279] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-22 10:01:23,294] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-22 10:33:29,054] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-22 10:38:24,037] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-22 10:42:59,237] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-11-22 10:49:45,289] WARNING django.request - Not Found: /api/robot-management/all-robot-telemetry/
+[2025-11-22 11:26:08,439] INFO django.utils.autoreload - Watching for file changes with StatReloader
