@@ -17,7 +17,7 @@ class HealthcareUser(AbstractUser):
     # is active is in abstract user
     # username is in abstract user
 
-    REQUIRED_FIELDS = ['name', 'role']
+    REQUIRED_FIELDS = ['name', 'role', 'email']
 
     def __str__(self):
         return f"{self.name} - {self.email} - {self.role}"

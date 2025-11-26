@@ -19,7 +19,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 🚀 Run ASGI Server
-uvicorn asgiserver:application --host 0.0.0.0 --port 8000
+uvicorn asgi_uk_medical_bot.asgi:application --host 0.0.0.0 --port 8001
+
 
 🧰 Redis Setup
 If you are using WSL / Linux
