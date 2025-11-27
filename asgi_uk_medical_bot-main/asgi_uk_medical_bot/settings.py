@@ -179,23 +179,23 @@ else:
 # }
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'med_bot',
-        'USER': 'med_bot_user',
-        'PASSWORD': 'med_bot@100',
-        'HOST': 'localhost',   # NOT 'postgres' because you are not in Docker
-        'PORT': '5432',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'med_bot',
+#         'USER': 'med_bot_user',
+#         'PASSWORD': 'med_bot@100',
+#         'HOST': 'localhost',   # NOT 'postgres' because you are not in Docker
+#         'PORT': '5432',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 AUTH_USER_MODEL = 'mainapp.HealthcareUser'
 

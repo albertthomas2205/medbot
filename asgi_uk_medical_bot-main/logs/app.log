@@ -1230,3 +1230,33 @@
 [2025-11-25 14:02:29,779] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
 [2025-11-25 14:02:29,792] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-arm-status/
 [2025-11-25 14:02:29,862] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
+[2025-11-27 09:48:26,883] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-27 09:49:12,076] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-27 09:50:24,574] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-27 09:51:06,876] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-27 09:51:11,216] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-27 09:51:29,373] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-27 09:51:41,204] WARNING django.request - Bad Request: /api/medicalbot/main/login/
+[2025-11-27 10:01:02,254] WARNING django.request - Not Found: /api/medicalbotrobot_management/getup/robot/robot_emergency/
+[2025-11-27 12:04:43,987] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
+[2025-11-27 12:04:44,042] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-arm-status/
+[2025-11-27 12:04:44,193] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
+[2025-11-27 12:04:44,209] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-arm-status/
+[2025-11-27 12:05:19,009] WARNING django.request - Bad Request: /api/medicalbot/bed/data/slot/create/
+[2025-11-27 14:52:22,746] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-arm-status/
+[2025-11-27 14:52:22,766] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
+[2025-11-27 14:52:22,908] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-arm-status/
+[2025-11-27 14:52:23,083] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
+[2025-11-27 14:53:33,837] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-arm-status/
+[2025-11-27 14:53:34,127] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
+[2025-11-27 14:53:34,355] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-arm-status/
+[2025-11-27 14:53:34,691] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
+[2025-11-27 14:54:01,165] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-arm-status/
+[2025-11-27 14:54:01,241] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
+[2025-11-27 14:54:01,357] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-arm-status/
+[2025-11-27 14:54:01,372] WARNING django.request - Not Found: /api/medicalbot/robot_management/get-joint-status/
+[2025-11-27 15:10:13,783] WARNING django.request - Unauthorized: /api/medicalbot/robot_management/getup/robot/robot_emergency/
+[2025-11-27 15:10:13,783] WARNING django.request - Unauthorized: /api/medicalbot/robot_management/failed-schedules/
+[2025-11-27 15:10:13,783] WARNING django.request - Unauthorized: /api/medicalbot/robot_management/active/alerts/
+[2025-11-27 15:10:13,784] WARNING django.request - Unauthorized: /api/medicalbot/robot_management/all-robot-telemetry/
+[2025-11-27 15:10:19,688] WARNING django.request - Bad Request: /api/medicalbot/main/login/
