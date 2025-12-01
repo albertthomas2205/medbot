@@ -29,13 +29,28 @@ from rest_framework import permissions
 #     SpectacularRedocView,
 # )
 
+# from rest_framework import permissions
+# from drf_yasg.views import get_schema_view
+# from drf_yasg import openapi
+
+# schema_view = get_schema_view(
+#     openapi.Info(
+#         title="MEDICAL BOAT API",
+#         default_version='v1',
+#         description="API documentation for my project",
+#     ),
+#     public=True,
+#     permission_classes=(permissions.AllowAny,),
+#     authentication_classes=[],  
+# )
+
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="MEDICAL BOAT API",
+        title="Medical Bot API",
         default_version='v1',
         description="API documentation for my project",
     ),
@@ -47,14 +62,11 @@ schema_view = get_schema_view(
    
 
 
-def health_check(request):
-    return HttpResponse("OK", status=200)
 
 
 urlpatterns = [
     
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0)),
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0)),
+
     
     path('admin/', admin.site.urls),
     path('api/medicalbot/main/',include('mainapp.urls')),
@@ -64,6 +76,9 @@ urlpatterns = [
     path('api/medicalbot/video_management/',include('video_management.urls')),
     path('api/medicalbot/vitals_management/',include('vitals_management.urls')),
     path('api/medicalbot/robot_management/',include('robot_management.urls')),
+    
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0)),
+    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0))
 
 ]
 

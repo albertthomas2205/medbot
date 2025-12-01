@@ -140,7 +140,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+# STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -199,53 +199,53 @@ DATABASES = {
 
 AUTH_USER_MODEL = 'mainapp.HealthcareUser'
 
-IS_DOCKER_BUILD = os.environ.get("IS_DOCKER_BUILD", "false").lower() == "true"
+# IS_DOCKER_BUILD = os.environ.get("IS_DOCKER_BUILD", "false").lower() == "true"
 
-LOG_DIR = os.path.join(BASE_DIR, 'logs')
-if not os.path.exists(LOG_DIR) and not IS_DOCKER_BUILD:
-    os.makedirs(LOG_DIR)
+# LOG_DIR = os.path.join(BASE_DIR, 'logs')
+# if not os.path.exists(LOG_DIR) and not IS_DOCKER_BUILD:
+#     os.makedirs(LOG_DIR)
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': '[{asctime}] {levelname} {name} - {message}',
-            'style': '{',
-        },
-    },
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-            'formatter': 'verbose',
-        },
-        **({
-            'file': {
-                'class': 'logging.FileHandler',
-                'filename': os.path.join(LOG_DIR, 'app.log'),
-                'level': 'DEBUG',
-                'formatter': 'verbose',
-            }
-        } if not IS_DOCKER_BUILD else {})
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console'] if IS_DOCKER_BUILD else ['console', 'file'],
-            'level': 'INFO',
-            'propagate': True,
-        },
-        '__main__': {
-            'handlers': ['console'] if IS_DOCKER_BUILD else ['console', 'file'],
-            'level': 'DEBUG',
-            'propagate': False,
-        },
-        'privilagecontroller.views': {
-            'handlers': ['console'] if IS_DOCKER_BUILD else ['console', 'file'],
-            'level': 'DEBUG',
-            'propagate': False,
-        },
-    }
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'verbose': {
+#             'format': '[{asctime}] {levelname} {name} - {message}',
+#             'style': '{',
+#         },
+#     },
+#     'handlers': {
+#         'console': {
+#             'class': 'logging.StreamHandler',
+#             'formatter': 'verbose',
+#         },
+#         **({
+#             'file': {
+#                 'class': 'logging.FileHandler',
+#                 'filename': os.path.join(LOG_DIR, 'app.log'),
+#                 'level': 'DEBUG',
+#                 'formatter': 'verbose',
+#             }
+#         } if not IS_DOCKER_BUILD else {})
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['console'] if IS_DOCKER_BUILD else ['console', 'file'],
+#             'level': 'INFO',
+#             'propagate': True,
+#         },
+#         '__main__': {
+#             'handlers': ['console'] if IS_DOCKER_BUILD else ['console', 'file'],
+#             'level': 'DEBUG',
+#             'propagate': False,
+#         },
+#         'privilagecontroller.views': {
+#             'handlers': ['console'] if IS_DOCKER_BUILD else ['console', 'file'],
+#             'level': 'DEBUG',
+#             'propagate': False,
+#         },
+#     }
+# }
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -294,6 +294,14 @@ CELERY_BEAT_SCHEDULE = {
 #         }
 #     }
 # }
+
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 CORS_ALLOW_ALL_ORIGINS = True
 
