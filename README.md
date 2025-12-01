@@ -39,7 +39,7 @@ redis-server
 
 Just start the server:
 
-redis-server --port 80
+redis-server --port 6380
 
 🌐 Access the Application
 
