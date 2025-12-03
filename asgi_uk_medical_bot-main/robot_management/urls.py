@@ -6,20 +6,16 @@ from django.conf.urls.static import static
 urlpatterns = [
                
     path('create-robot-telemetry/', create_or_update_robot_telemetry, name='get the room_cord'),
-
     path('get-patient-data/<int:patient_id>/', get_patient_data, name='get the room_cord'),
     path('get-room_entry_cord/<str:room>/', get_room_entry_cord, name='get the room_cord'),
     path('get-room_exit_cord/<str:room>/', get_room_exit_cord, name='get the room_cord'),
     path('get-slot_cord/<str:room>/<str:bed>/', get_slot_cord, name='get the slot cord'),
-
     path('save-help-data/', save_help, name='save help data'),
     path('respond-help/<int:alert_id>/<int:rsp>/', respond_alert, name='respond to alert'),
     path("alerts/", view_all_alerts, name="view_all_alerts"),
     path("alerts/<int:pk>/update-reason/", update_alert_reason, name="update alert reason"),
     path("active/alerts/", view_active_alerts, name="view active alerts"),
-
     path("fetch-latest-slot/", fetch_latest_slot, name="fetch latest slot"),
-
     path("all-robot-telemetry/", robot_telemetry_all, name="fetch all robot telemetry"),
 
     # path("save-map-telemetry/", save_stcm_image_to_db, name="save_stcm_to_db url"),

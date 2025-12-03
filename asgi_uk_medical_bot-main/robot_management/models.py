@@ -16,6 +16,7 @@ class RobotTelemetry(models.Model):
         
     robot_name = models.CharField(default="Med Bot")
     robot_battery = models.IntegerField(default=0)
+    robot_qvalue = models.IntegerField(default=0)
     robot_break = models.BooleanField(default=False)
     robot_emergency = models.BooleanField(default=False)
     robot_physical_emergency = models.BooleanField(default=False)
