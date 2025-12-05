@@ -312,11 +312,26 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
 }
 
+
+
+
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels_redis.core.RedisChannelLayer",
+#         "CONFIG": {
+#             "hosts": [("127.0.0.1", 6380)],  # match your docker-compose service name + port
+#         },
+#     },
+# }
+
+# token ='ASU0AAImcDI3ZWZjOTRiNjc0MTU0ZTE5ODA5MTJlM2Q4ZDBiNWRlN3AyOTUyNA'
+
+REDIS_URL = 'rediss://default:ASU0AAImcDI3ZWZjOTRiNjc0MTU0ZTE5ODA5MTJlM2Q4ZDBiNWRlN3AyOTUyNA@cute-rabbit-9524.upstash.io:6379'
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [("127.0.0.1", 6380)],  # match your docker-compose service name + port
+            "hosts": [REDIS_URL],  # match your docker-compose service name + port
         },
     },
 }
