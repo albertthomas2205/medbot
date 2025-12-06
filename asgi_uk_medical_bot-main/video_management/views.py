@@ -190,10 +190,93 @@ def view_active_video(request):
                         status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
+# @api_view(['DELETE'])
+# @permission_classes([IsAuthenticated])
+# def delete_video(request):
+#     try:
+#         # Permission Checks
+#         if request.user.role not in ['admin', 'nurse']:
+#             return Response({
+#                 'status': 'error',
+#                 'message': 'Permission denied.',
+#                 'data': None
+#             }, status=status.HTTP_403_FORBIDDEN)
+
+#         if not hasFeatureAccess(request.user, 'video_management_crud'):
+#             return Response({
+#                 'status': 'error',
+#                 'message': 'Permission denied.',
+#                 'data': None
+#             }, status=status.HTTP_403_FORBIDDEN)
+
+#         pk = request.data.get('pk')
+#         hard_delete = request.data.get('hard_delete', False)  # 👈 NEW
+
+#         if not pk:
+#             return Response({
+#                 'status': 'error',
+#                 'message': 'Primary key (pk) is required.',
+#                 'data': None
+#             }, status=status.HTTP_400_BAD_REQUEST)
+
+#         # Get Video
+#         try:
+#             instance = VideoManagementModel.objects.get(id=pk)
+#         except VideoManagementModel.DoesNotExist:
+#             return Response({
+#                 'status': 'error',
+#                 'message': 'Video not found.',
+#                 'data': None
+#             }, status=status.HTTP_404_NOT_FOUND)
+
+#         # -----------------------------------------
+#         # 🚨 HARD DELETE (Delete Record + File)
+#         # -----------------------------------------
+#         if hard_delete:
+#             # Delete video file from storage
+#             video_file = instance.video  # FileField
+
+#             if video_file and video_file.path:
+#                 import os
+#                 if os.path.exists(video_file.path):
+#                     os.remove(video_file.path)
+
+#             # Delete DB record
+#             instance.delete()
+
+#             return Response({
+#                 'status': 'success',
+#                 'message': 'Video permanently deleted.',
+#                 'data': None
+#             }, status=status.HTTP_200_OK)
+
+#         # -----------------------------------------
+#         # 🟡 SOFT DELETE (Toggle Active / Inactive)
+#         # -----------------------------------------
+#         instance.is_active = not instance.is_active
+#         instance.save(update_fields=['is_active'])
+
+#         message = "Video activated." if instance.is_active else "Video deactivated."
+#         return Response({
+#             'status': 'success',
+#             'message': message,
+#             'data': None
+#         }, status=status.HTTP_200_OK)
+
+#     except Exception as e:
+#         logger.exception(f"Exception in delete_video: {e}")
+#         return Response({
+#             'status': 'error',
+#             'message': 'Internal server error.',
+#             'data': None
+#         }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
 @api_view(['DELETE'])
 @permission_classes([IsAuthenticated])
 def delete_video(request):
     try:
+        # Permission Checks
         if request.user.role not in ['admin', 'nurse']:
             return Response({'status': 'error', 'message': 'Permission denied.', 'data': None},
                             status=status.HTTP_403_FORBIDDEN)
@@ -203,6 +286,8 @@ def delete_video(request):
                             status=status.HTTP_403_FORBIDDEN)
 
         pk = request.data.get('pk')
+        hard_delete = request.data.get('hard_delete', False)
+
         if not pk:
             return Response({'status': 'error', 'message': 'Primary key (pk) is required.', 'data': None},
                             status=status.HTTP_400_BAD_REQUEST)
@@ -213,18 +298,46 @@ def delete_video(request):
             return Response({'status': 'error', 'message': 'Video not found.', 'data': None},
                             status=status.HTTP_404_NOT_FOUND)
 
+        # -----------------------------------------------------
+        # HARD DELETE (Delete DB record + Local file)
+        # -----------------------------------------------------
+        if hard_delete:
+            # Delete only if file exists
+            if instance.video_image_file and instance.video_image_file.name:
+                file_path = instance.video_image_file.path
+
+                import os
+                if os.path.exists(file_path):
+                    os.remove(file_path)
+
+            instance.delete()
+
+            return Response({
+                'status': 'success',
+                'message': 'Video permanently deleted.',
+                'data': None
+            }, status=status.HTTP_200_OK)
+
+        # -----------------------------------------------------
+        # SOFT DELETE (Toggle)
+        # -----------------------------------------------------
         instance.is_active = not instance.is_active
         instance.save(update_fields=['is_active'])
 
-        message = "Video activated." if instance.is_active else "Video deactivated."
-        return Response({'status': 'success', 'message': message, 'data': None},
-                        status=status.HTTP_200_OK)
+        msg = "Video activated." if instance.is_active else "Video deactivated."
+        return Response({
+            'status': 'success',
+            'message': msg,
+            'data': None
+        }, status=status.HTTP_200_OK)
 
     except Exception as e:
         logger.exception(f"Exception in delete_video: {e}")
-        return Response({'status': 'error', 'message': 'Internal server error.', 'data': None},
-                        status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
+        return Response({
+            'status': 'error',
+            'message': f"Internal server error: {str(e)}",
+            'data': None
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])

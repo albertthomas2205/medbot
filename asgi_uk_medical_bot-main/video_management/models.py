@@ -9,6 +9,7 @@ def video_upload_to(instance, filename):
     safe_name = instance.video_name.replace(" ", "_").lower()
     return f"demo_data/{safe_name}_{timestamp}{ext}"
 
+
 class VideoManagementModel(models.Model):
     video_name = models.CharField(max_length=20)
 
