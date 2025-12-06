@@ -48,7 +48,7 @@ Open this in browser:
 http://localhost:8000
 
 
-or access from your LAN:
+or Access from your LAN:
 
 http://<your-ip>:8000
 
