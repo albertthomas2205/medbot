@@ -167,6 +167,8 @@ def create_slot(request):
         x = request.data.get("x") or 0
         y = request.data.get("y") or 0
         yaw = request.data.get("yaw") or 0
+        
+        
 
         if not room_id or not bed_id:
             return Response({'status': 'error', 'message': 'Room and Bed are required.', 'data': None}, status=status.HTTP_400_BAD_REQUEST)
@@ -176,6 +178,7 @@ def create_slot(request):
             return Response({'status': 'error', 'message': 'Slot already exist (activate if inactive).', 'data': None}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
+            
             slot = SlotDataModel.objects.create(
                 room_name_id=room_id,
                 bed_name_id=bed_id,
@@ -184,6 +187,7 @@ def create_slot(request):
                 yaw=yaw,
                 created_by=request.user
             )
+            BedDataModel.objects.filter(id=bed_id).update(is_booked=True)
             return Response({'status': 'success', 'message': 'Slot created successfully.', 'data': slot.id}, status=status.HTTP_201_CREATED)
 
         except IntegrityError:
@@ -231,10 +235,67 @@ def view_active_slot(request):
         logger.exception(f"Exception in slot_management_crud: {e}")
         return Response({'status': 'error', 'message': 'Internal server error.', 'data': None}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
+# @api_view(['DELETE'])
+# @permission_classes([IsAuthenticated])
+# def soft_delete_slot(request, slot_id):
+#     try:
+#         if request.user.role not in ['admin', 'nurse']:
+#             return Response({
+#                 'status': 'error',
+#                 'message': 'Permission denied.',
+#                 'data': None
+#             }, status=status.HTTP_403_FORBIDDEN)
+        
+#         if not hasFeatureAccess(request.user, 'slot_management_crud'):
+#             return Response({
+#                 'status': 'error',
+#                 'message': 'Permission denied.',
+#                 'data': None
+#             }, status=status.HTTP_403_FORBIDDEN)
+
+#         slot_instance = SlotDataModel.objects.filter(id=slot_id).first()
+#         bed_id = slot_instance.bed_name.id if slot_instance and slot_instance.bed_name else None
+       
+#         if not slot_instance:
+#             return Response({
+#                 'status': 'error',
+#                 'message': 'Slot not found.',
+#                 'data': None
+#             }, status=status.HTTP_404_NOT_FOUND)
+
+#         slot_instance.is_active = not slot_instance.is_active
+#         BedDataModel.objects.filter(id=bed_id).update(
+#                 is_booked = not slot_instance.is_active
+#             )
+
+#         # updated_instance = slot_instance.save()
+      
+#         if slot_id:
+#             slot_instance.updated_by = request.user
+#         else:
+#             slot_instance.created_by = request.user
+#         slot_instance.save() 
+#         action = 'activated' if slot_instance.is_active else 'deactivated'
+#         return Response({
+#             'status': 'success',
+#             'message': f"Slot {action} successfully.",
+#             'data': None
+#         }, status=status.HTTP_200_OK)
+
+#     except Exception as e:
+#         logger.exception(f"Exception in slot_management_crud: {e}")
+#         return Response({
+#             'status': 'error',
+#             'message': 'Internal server error.',
+#             'data': None
+#         }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    
+    
 @api_view(['DELETE'])
 @permission_classes([IsAuthenticated])
 def soft_delete_slot(request, slot_id):
     try:
+        # ----- ROLE CHECK -----
         if request.user.role not in ['admin', 'nurse']:
             return Response({
                 'status': 'error',
@@ -242,6 +303,7 @@ def soft_delete_slot(request, slot_id):
                 'data': None
             }, status=status.HTTP_403_FORBIDDEN)
         
+        # ----- FEATURE ACCESS CHECK -----
         if not hasFeatureAccess(request.user, 'slot_management_crud'):
             return Response({
                 'status': 'error',
@@ -249,6 +311,7 @@ def soft_delete_slot(request, slot_id):
                 'data': None
             }, status=status.HTTP_403_FORBIDDEN)
 
+        # ----- FETCH SLOT -----
         slot_instance = SlotDataModel.objects.filter(id=slot_id).first()
         if not slot_instance:
             return Response({
@@ -257,13 +320,27 @@ def soft_delete_slot(request, slot_id):
                 'data': None
             }, status=status.HTTP_404_NOT_FOUND)
 
+        # Get associated bed
+        bed_id = slot_instance.bed_name.id if slot_instance.bed_name else None
+
+        # ----- TOGGLE SLOT ACTIVE STATUS -----
         slot_instance.is_active = not slot_instance.is_active
-        # updated_instance = slot_instance.save()
+
+        # ----- CORRECT LOGIC FOR BED BOOKING -----
+        # If slot is active → bed must be booked = True
+        # If slot is inactive → bed must be available = False
+        BedDataModel.objects.filter(id=bed_id).update(
+            is_booked=slot_instance.is_active
+        )
+
+        # ----- AUDIT FIELDS -----
         if slot_id:
             slot_instance.updated_by = request.user
         else:
             slot_instance.created_by = request.user
-        slot_instance.save() 
+
+        slot_instance.save()
+
         action = 'activated' if slot_instance.is_active else 'deactivated'
         return Response({
             'status': 'success',
@@ -278,7 +355,7 @@ def soft_delete_slot(request, slot_id):
             'message': 'Internal server error.',
             'data': None
         }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-    
+
 @api_view(['POST'])
 @authentication_classes([])
 @permission_classes([AllowAny])
