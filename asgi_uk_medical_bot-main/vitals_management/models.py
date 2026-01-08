@@ -28,7 +28,7 @@ class Bp2CheckMeModel(models.Model):
     sys = models.CharField(max_length=20, null=True, blank=True)
     dia = models.CharField(max_length=20, null=True, blank=True)
     map = models.CharField(max_length=20, null=True, blank=True)
-    pulse_rate_note = models.CharField(max_length=20, null=True, blank=True)
+    pulse_rate_note = models.CharField(max_length=50, null=True, blank=True)
 
     image_url = models.URLField(max_length=500, blank=True, null=True)
     image_file = models.FileField(upload_to=image_upload_to, blank=True, null=True)

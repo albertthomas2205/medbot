@@ -458,3 +458,77 @@ class SlotPatientReturn(AsyncWebsocketConsumer):
     async def slot_message(self, event):
         payload = event.get("payload")
         await self.send(text_data=json.dumps({"payload": payload}))
+        
+
+
+class RobotConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        """
+        One robot → one group
+        """
+        self.group_name = "robot_movement"
+
+        await self.channel_layer.group_add(
+            self.group_name,
+            self.channel_name
+        )
+        await self.accept()
+
+    async def disconnect(self, close_code):
+        await self.channel_layer.group_discard(
+            self.group_name,
+            self.channel_name
+        )
+
+    async def receive(self, text_data):
+        """
+        Receive data from Robot
+        """
+        # ---- Safe JSON parsing ----
+        try:
+            data = json.loads(text_data)
+        except json.JSONDecodeError:
+            return
+
+        role = data.get("role")
+        if role != "robot":
+            return
+
+        joints = data.get("joints")
+        if not joints:
+            return
+
+        # 🔥 1. INSTANT response to sender (NO Redis, NO delay)
+        await self.send(
+            text_data=json.dumps({
+                "type": "joint_update",
+                "urdfJoints": joints,
+                "source": "direct"
+            })
+        )
+
+        # 🔥 2. Broadcast to other connected clients
+        await self.channel_layer.group_send(
+            self.group_name,
+            {
+                "type": "joint_update",
+                "joints": joints,
+                "sender": self.channel_name,
+            }
+        )
+
+    async def joint_update(self, event):
+        """
+        Send joint data to other UI clients
+        """
+        # ---- Prevent echo to sender ----
+        if event.get("sender") == self.channel_name:
+            return
+
+        await self.send(
+            text_data=json.dumps({
+                "type": "joint_update",
+                "urdfJoints": event["joints"],
+                "source": "broadcast"
+            })
+        )

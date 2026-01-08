@@ -22,5 +22,6 @@ websocket_urlpatterns = [
     re_path(r'ws/socket-server/refresh-arm-data-value/', consumers.RefreshArmDataValue.as_asgi()),
     re_path(r'ws/socket-server/refresh-joint-data-value/', consumers.RefreshJointDataValue.as_asgi()),
     re_path(r'ws/socket-server/joint-heat-value/', consumers.JointHeatConsumer.as_asgi()),
+    re_path(r'ws/socket-server/arm-moment/', consumers.RobotConsumer.as_asgi()),
 
 ]
